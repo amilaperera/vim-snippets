@@ -93,6 +93,10 @@ snippet until
 	until ${1:condition}
 		${0}
 	end
+snippet ctor
+	def initialize(${1:args})
+		${0}
+	end
 snippet cla class .. end
 	class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
 		${0}
